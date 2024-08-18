@@ -12,8 +12,17 @@ public interface ICardDriverMock : ICardDriver
     void SetCardData(CardData cardData);
     void CantReadCard();
     void TakeCard();
-    void TriggerCardReaderError();    
+    void TriggerCardReaderError();
 }
+
+//public interface ICardDriverMock : ICardDriver
+//{
+//    new IAsyncEnumerable<EjectResult> EjectCard(TimeSpan takeCardTimeout, CancellationToken cancellationToken);
+//    void SetCardData(CardData cardData);
+//    void CantReadCard();
+//    void TakeCard();
+//    void TriggerCardReaderError();
+//}
 
 public enum EjectResult
 {
